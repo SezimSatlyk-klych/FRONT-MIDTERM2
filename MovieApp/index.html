@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>🎥 Movies App 🎥</h1>
+    <input type="text" id="searchInput" placeholder="Search for movies...">
+</header>
+<main>
+    <div class="sort-options">
+        <button id="sort-popularity">Sort by Popularity</button>
+        <button id="sort-release">Sort by Release Date</button>
+        <button id="sort-rating">Sort by Rating</button>
+        <button id="show-watchlist">Show Watchlist</button>
+    </div>
+    <div id="moviesGrid" class="movies-grid"></div>
+</main>
+
+<div id="movieModal" class="modal hidden">
+    <div class="modal-content">
+        <span class="close-btn" id="closeModal">&times;</span>
+        <div id="movieDetails"></div>
+    </div>
+</div>
+
+
+<div id="toast-container"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
