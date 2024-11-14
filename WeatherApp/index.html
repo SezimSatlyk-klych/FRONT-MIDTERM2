@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div id="app">
+    <header class="header">
+      <h1>Weather App</h1>
+      <div class="search-bar">
+        <input id="city-search" type="text" placeholder="Search city..." autocomplete="off" />
+        <ul id="search-suggestions"></ul>
+      </div>
+      <button id="unit-toggle">°C / °F</button>
+    </header>
+
+    <main>
+      <section id="current-weather" class="weather-card">
+        <h2 id="city-name">City Name</h2>
+        <p id="current-temp">Temperature: --</p>
+        <p id="current-desc">Condition: --</p>
+        <p id="current-humidity">Humidity: --%</p>
+        <p id="current-wind">Wind Speed: --</p>
+        <img id="current-icon" src="" alt="Weather Icon" />
+      </section>
+
+      <section id="forecast" class="forecast-section">
+        <h3>5-Day Forecast</h3>
+        <div id="forecast-cards"></div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
