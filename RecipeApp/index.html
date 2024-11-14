@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="block">
+        <div class="container">
+            <header class="header">
+                <div class="logo">
+                    <img src="../assets//logo-simple-framed-green-gradient.svg" alt="">
+                    <div class="logo_text">
+                        <div class="logo_name">Recipes</div>
+                        <div class="logo_subtext">about recipes</div>
+                    </div>
+                </div>
+                <nav class="nav" id = 'nav_list'>
+                    <li id = "home">home</li>
+                    <li id = "fav">favorites</li>
+                </nav>
+            </header>
+            <section class="recipes">
+                <div class="container recipes_inner" id = "recipes">
+                    <div class="search">
+                        <div class="search_input">
+                            <input type="text" placeholder="search..." id="search_input_in">
+                            <button class="search_button" id = "search_btn">
+                                <img src="../assets/icons8-search-50.png" alt="">
+                            </button>
+                        </div>
+                        <div class="search_suggests none" id="search_suggests">
+                        </div>
+                    </div>
+                    <div class="receip_block">
+                         <div class="receip_list" id = "receip_list">
+                            
+                        </div>
+                        <div class="receip_empty" id = "receip_empty">
+                            There's nothing here yet
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="individual_page none" id = "ind_page">
+            </section>
+            <section class = "favorites_page none" id = "fav_page">
+                <div class="favorites_list conatainer" id = "fav_list">
+                </div>
+                <div class="favorites_empty none" id = "favorites_empty">
+                    There's nothing here yet
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src = "script.js" type="module"></script>
+</body>
+</html>
